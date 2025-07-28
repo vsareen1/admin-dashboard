@@ -1,2 +1,2 @@
 # admin-dashboard
-A admin dashboard project from the odin project series
+An admin dashboard project from the odin project series
