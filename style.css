@@ -28,6 +28,10 @@ button {
     border-radius: 15px;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+
 input {
     width: 550px;
     background-color: rgba(214, 223, 232, 0.909);
@@ -94,9 +98,10 @@ img {
     gap: 16px;
 }
 
-.dashboard-item > p {
+.dashboard-item > button {
     font-size: 16px;
     font-weight: 600;
+    text-align: left;
 }
 
 #top-search-container {
@@ -104,6 +109,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 20px;
+    margin-bottom: 10px;;
 }
 
 #top-search-container > div {
@@ -123,4 +129,36 @@ img {
     border-radius: 50px;
     font-size: 150%;
 
+}
+
+#profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+#profile-container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+#profile-container-header h5{
+    margin: 0px;
+}
+
+#profile-container-header p{
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#profile-button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
