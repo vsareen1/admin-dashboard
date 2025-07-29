@@ -59,6 +59,10 @@ img {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
 
 }
 
@@ -161,4 +165,102 @@ img {
     display: flex;
     flex-direction: row;
     gap: 24px;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    background-color: rgba(214, 223, 232, 0.909);
+}
+
+/* Remove Border style of grid from below */
+#projects-container > #projects {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#projects-container > #announcements {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    border-style: solid;
+    margin-right: 16px;
+    margin-top: 16px;
+
+}
+
+#projects-container > #trending {
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    border-style: solid;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+#projects > p {
+    padding-left: 18px;
+    font-weight: 600;
+}
+#project-card-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 16px;
+}
+
+
+.project-card {
+    border-left-style: solid;
+    border-left-width: 8px;
+    border-radius: 8px;
+    border-left-color: rgb(243, 193, 66);
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 10px;
+    min-height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+
+}
+
+.project-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.project-card-info {
+    font-size: 13px;
+    color: gray;
+    margin: 0px;
+    max-width: 250px;
+}
+.project-card-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    gap: 16px;
 }
