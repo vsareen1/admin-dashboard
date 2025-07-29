@@ -3,6 +3,9 @@ html {
     height: 100vh;
     margin: 0;
     padding: 0;
+    --icon-image-height: 22px;
+    --main-background-color: rgb(41, 156, 237);
+    --base-color: white;
 }
 
 body {
@@ -16,6 +19,26 @@ body {
     padding: 0;
 }
 
+button {
+    background-color: var(--main-background-color);
+    color: var(--base-color);
+    border-width: 0px;
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+input {
+    width: 550px;
+    background-color: rgba(214, 223, 232, 0.909);
+    height: 25px;
+    border-radius: 12.5px;
+    border-width: 0px;
+}
+
+img {
+    height: var(--icon-image-height);
+}
 #dashboard-widgets-container {
     gap: 20px;
     display: flex;
@@ -25,7 +48,7 @@ body {
     grid-column-start: 1;
     flex-direction: column;
     background-color: rgb(41, 156, 237);
-    color: white;
+    color: var(--base-color);
 }
 
 #search-profile-container{
@@ -54,12 +77,15 @@ body {
 .dashboard-group {
     padding-left: 16px;
 }
+
 #dashboard-item-header > img{
     height: 40px;    
 }
+
 #dashboard-item-header > p{
-    font-size: 25px;    
+    font-size: var(--icon-image-height);    
 }
+
 .dashboard-item {
     display: flex;
     flex-direction: row;
@@ -67,10 +93,34 @@ body {
     height: 40px;
     gap: 16px;
 }
-.dashboard-item > img {
- height: 20px;
-}
+
 .dashboard-item > p {
     font-size: 16px;
     font-weight: 600;
+}
+
+#top-search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+#top-search-container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-image {
+    background-color: rgb(243, 193, 66);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 150%;
+
 }
