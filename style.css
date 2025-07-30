@@ -202,7 +202,6 @@ img {
     grid-row-end: 7;
     grid-column-start: 3;
     grid-column-end: 3;
-    border-style: solid;
     margin-right: 16px;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -307,4 +306,43 @@ img {
     margin: 0px;
     font-size: 10px;
     width: 180px;
+}
+
+#trending-container {
+    background-color: var(--base-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.trending-profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 18px;
+    gap: 16px;
+    height: 50px;
+}
+
+
+.trending-profile-image {
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    border-radius: 20px;
+    text-align: center;
+    padding: auto;
+    font-size: 12px;
+}
+
+.trending-tag {
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.trending-profile-container > div > p {
+    margin: 0px;
+    font-size: 12px;
 }
